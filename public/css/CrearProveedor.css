@@ -1,0 +1,168 @@
+/* ----------------------------- */
+/* CONTENEDOR PRINCIPAL CENTRADO */
+/* ----------------------------- */
+.center-screen {
+  max-width: 64rem;
+  margin: 5rem auto 2rem;
+  background-color: #fff;
+  padding: 2.5rem 1.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* ----------------------------- */
+/* TÍTULO PRINCIPAL */
+/* ----------------------------- */
+.center-screen h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25rem; /* text-3xl */
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+
+/* ----------------------------- */
+/* FORMULARIO */
+/* ----------------------------- */
+form.space-y-4 {
+  width: 100%;
+}
+
+.form-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.form-columns > div {
+  flex: 1 1 48%;
+  min-width: 250px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #333;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+  background-color: #f0f8ff;
+}
+
+
+/* ----------------------------- */
+/* MENSAJES DE ERROR */
+/* ----------------------------- */
+.bg-red-100 {
+  background-color: #ffe5e5;
+  border-left: 5px solid #c62828;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.text-red-800 {
+  color: #c62828;
+}
+
+.list-disc {
+  padding-left: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+
+/* ----------------------------- */
+/* BOTONES */
+/* ----------------------------- */
+.form-buttons {
+  display: flex;
+  justify-content: flex-end; /* Alinea el botón a la derecha */
+  padding-top: 1.5rem;
+}
+
+
+
+.form-buttons button {
+  background-color: #dc2626; /* rojo */
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(220, 38, 38, 0.5);
+
+  margin-top: 1rem; /* ⬅️ Aquí se baja el botón */
+}
+
+
+.form-buttons button:hover {
+  background-color: #b91c1c;
+  transform: scale(1.03);
+}
+
+
+button[type="submit"] {
+    background-color: #dc2626;
+    color: white;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(220, 38, 38, 0.5);
+}
+
+/* ----------------------------- */
+/* CANCELAR LINK */
+/* ----------------------------- */
+.btn-cancelar {
+  color: #4b5563;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  margin-left: 0.5rem; /* antes podía ser 1rem o más, ahora es más pequeño */
+}
+
+.btn-cancelar:hover {
+  color: #111827;
+}
+
+
+/* ----------------------------- */
+/* RESPONSIVE */
+/* ----------------------------- */
+@media (max-width: 640px) {
+  .form-columns > div {
+    flex-basis: 100%;
+  }
+}
+
+.volver-enlace {
+  margin-top: 1.5rem;
+}
+

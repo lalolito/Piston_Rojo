@@ -1,0 +1,220 @@
+/* CrearInventario.css */
+
+.form-container {
+  max-width: 700px;
+  margin: 2.5rem auto 5rem auto; /* más espacio arriba y abajo */
+  padding: 2rem 2rem 3rem 2rem;
+  background: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+/* Header con título y botón alineados */
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ef4444; /* rojo vibrante para el borde */
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form-header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #111;
+    letter-spacing: 0.02em;
+}
+
+.form-header a {
+    color: #ef4444; /* rojo */
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.form-header a:hover {
+    color: #b91c1c; /* rojo oscuro para hover */
+}
+
+.form-error {
+    background: #fef2f2;
+    border-left: 5px solid #b91c1c;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0.75rem;
+    color: #7f1d1d;
+    font-weight: 600;
+}
+
+.form-error h3 {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.form-error ul {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+/* Grid de formulario: 2 columnas responsivas */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.75rem 2.5rem;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 0.65rem 1rem;
+    border: 2px solid #ddd;
+    border-radius: 0.75rem;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #222;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #ef4444; /* rojo */
+    box-shadow: 0 0 8px rgba(239, 68, 68, 0.4);
+    outline: none;
+}
+
+/* Contenedor del input con prefijo y sufijo (ejemplo: MXN) */
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+/* Prefijo MXN bien posicionado a la izquierda */
+.input-group .prefix {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ef4444; /* rojo */
+    font-weight: 700;
+    font-size: 1rem;
+    user-select: none;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Sufijo MXN bien posicionado a la derecha */
+.input-group .suffix {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ef4444;
+    font-weight: 700;
+    font-size: 1rem;
+    user-select: none;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Input con espacio para prefijo/sufijo */
+.input-group input {
+    width: 100%;
+    padding-left: 3.5rem; /* espacio para prefijo */
+    padding-right: 3.5rem; /* espacio para sufijo */
+    border: 2px solid #ddd;
+    border-radius: 0.75rem;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #222;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #ef4444;
+    box-shadow: 0 0 8px rgba(239, 68, 68, 0.5);
+    outline: none;
+}
+
+.disabled-input {
+    background-color: #f3f4f6;
+    cursor: not-allowed;
+    color: #6b7280;
+}
+
+/* Contenedor del botón con separación y línea roja arriba */
+.form-footer {
+    margin-top: 4rem; /* más espacio arriba */
+    border-top: 2px solid #ef4444;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Botón Guardar Producto */
+button[type="submit"] {
+    background-color: #ef4444;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.5);
+}
+
+button[type="submit"]:hover {
+    background-color: #b91c1c;
+    box-shadow: 0 6px 18px rgba(185, 28, 28, 0.7);
+}
+
+button svg {
+    height: 1.3rem;
+    width: 1.3rem;
+    fill: currentColor;
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 1rem auto 1rem;
+    padding: 2rem 2.5rem;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Opcional: para que el formulario no ocupe todo el alto y se vea centrado verticalmente si la página es alta */
+body, html {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+x-app-layout > div { 
+  flex-grow: 1; /* Para que el contenido crezca y permita espacio arriba y abajo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem; /* espacio superior para que no se pegue al header */
+  padding-bottom: 3rem; /* espacio inferior para que no toque el footer */
+}
+
+/* Mantén tus estilos de formulario actuales, solo esto es para centrarlo y separar */

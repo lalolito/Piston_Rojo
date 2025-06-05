@@ -1,0 +1,315 @@
+/* --- Reset básico para la tabla de citas --- */
+table {
+    
+    border-spacing: 0 0.75rem;
+    width: 100%;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    font-size: 1rem;
+    color: #181818;
+    background: transparent;
+}
+
+/* Encabezado de tabla */
+thead tr {
+    background-color: #181818;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 800;
+    border-radius: 6px;
+}
+
+thead th {
+    padding: 16px 14px;
+    border: none;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.05rem;
+}
+
+/* Cuerpo de la tabla */
+tbody tr {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgb(24 24 24 / 0.07);
+    transition: background-color 0.3s;
+    cursor: default;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+tbody td {
+    padding: 16px 14px;
+    color: #181818;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem;
+}
+
+/* Estados de la cita */
+.estado-pendiente {
+    background-color: #f9f9f9;
+    color: #b59f00;
+    padding: 7px 16px;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: inline-block;
+    border: 1.5px solid #e2e2e2;
+}
+.estado-confirmada {
+    background-color: #fff;
+    color: #181818;
+    border: 1.5px solid #e2e2e2;
+    padding: 7px 16px;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: inline-block;
+}
+.estado-completada {
+    background-color: #f7f7f7;
+    color: #1a7f37;
+    border: 1.5px solid #e2e2e2;
+    padding: 7px 16px;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: inline-block;
+}
+.estado-cancelada {
+    background-color: #ffebee;
+    color: #961818;
+    border: 1.5px solid #e2e2e2;
+    padding: 7px 16px;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: inline-block;
+}
+.estado-no_asistio {
+    background-color: #f3f4f6;
+    color: #555;
+    border: 1.5px solid #e2e2e2;
+    padding: 7px 16px;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: inline-block;
+}
+
+/* Botón Nueva Cita */
+a.bg-blue-600 {
+    background-color: #961818;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 8px;
+    padding: 10px 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 8px #96181811;
+    border: none;
+}
+a.bg-blue-600:hover {
+    background-color: #181818;
+    color: #fff;
+}
+
+/* Botón Regresar */
+.btn-regresar {
+
+    color: #961818;
+    
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    margin-right: 18px;
+    display: inline-block;
+}
+.btn-regresar:hover {
+    background: #961818;
+    color: #fff;
+    border-color: #961818;
+}
+
+/* Botón Nueva Cita */
+.btn-nueva-cita {
+    background-color: #000000;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 8px;
+    padding: 10px 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 8px #96181811;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.btn-nueva-cita:hover {
+    background-color: #181818;
+    color: #fff;
+}
+@media (max-width: 767.98px) {
+    .btn-nueva-cita {
+        width: 100% !important;
+        display: block !important;
+        margin-bottom: 10px;
+    }
+}
+
+/* Mensajes */
+.bg-green-100 {
+    background-color: #e6ffed !important;
+    border-left: 4px solid #1a7f37 !important;
+}
+.text-green-800 {
+    color: #1a7f37 !important;
+}
+.bg-yellow-100 {
+    background-color: #fffbe6 !important;
+    border-left: 4px solid #b59f00 !important;
+}
+.text-yellow-800 {
+    color: #b59f00 !important;
+}
+.bg-red-100 {
+    background-color: #ffebee !important;
+    border-left: 4px solid #961818 !important;
+}
+.text-red-800 {
+    color: #961818 !important;
+}
+
+/* Contenedor principal */
+.max-w-6xl {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+}
+
+/* Scrollbar personalizado */
+.overflow-x-auto::-webkit-scrollbar {
+    height: 8px;
+}
+.overflow-x-auto::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.overflow-x-auto::-webkit-scrollbar-thumb {
+    background-color: #961818;
+    border-radius: 20px;
+    border: 3px solid #f1f1f1;
+}
+
+/* Título */
+h1.text-2xl.font-bold {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    margin-bottom: 24px;
+    font-size: 2.25rem;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.10);
+}
+
+/* --- Responsive tabla de citas tipo tarjeta en móvil --- */
+@media (max-width: 767.98px) {
+    .citas-responsive-table thead {
+        display: none !important;
+    }
+    .citas-responsive-table tr.d-block {
+        display: block !important;
+        margin-bottom: 1.2rem;
+        border: 1px solid #f3f4f6;
+        border-radius: 0.7rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        background: #fff;
+    }
+    .citas-responsive-table td {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 0.85rem 1rem !important;
+        border: none !important;
+        border-bottom: 1px solid #f3f4f6 !important;
+        font-size: 1rem !important;
+        text-align: left !important;
+        background: #fff;
+        min-height: 44px;
+    }
+    .citas-responsive-table td::before {
+        content: attr(data-label) ":";
+        font-weight: 700;
+        color: #961818;
+        text-transform: uppercase;
+        min-width: 110px;
+        margin-right: 0.5rem;
+        font-size: 0.98rem;
+        letter-spacing: 0.04em;
+        flex-shrink: 0;
+        display: inline-block;
+        text-align: left;
+    }
+    .citas-responsive-table td > * {
+        flex: 1 1 0;
+        min-width: 0;
+        word-break: break-word;
+    }
+    .citas-responsive-table tr:last-child td {
+        border-bottom: none !important;
+    }
+}
+
+/* --- Responsive botones --- */
+@media (max-width: 767.98px) {
+    .btn-regresar,
+    .btn-nueva-cita,
+    a.bg-blue-600 {
+        width: 100% !important;
+        display: block !important;
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .row.align-items-center > div {
+        text-align: center !important;
+    }
+}
+
+/* --- Responsive título --- */
+.titulo-mis-citas,
+h1.text-2xl.font-bold {
+    font-size: 2.1rem;
+    font-weight: 900;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.10);
+}
+@media (max-width: 767.98px) {
+    .titulo-mis-citas,
+    h1.text-2xl.font-bold {
+        font-size: 1.3rem;
+        margin-bottom: 18px;
+    }
+}
+
+

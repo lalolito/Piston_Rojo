@@ -1,0 +1,242 @@
+/* ----------------------------- */
+/* CONTENEDOR PRINCIPAL CENTRADO */
+/* ----------------------------- */
+.max-w-3xl {
+  max-width: 32rem !important; /* Más compacto */
+  margin: 3rem auto 2rem !important;
+  background-color: #fff !important;
+  padding: 2rem 1.5rem !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08) !important;
+  border-radius: 12px !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+/* ----------------------------- */
+/* TÍTULO PRINCIPAL */
+/* ----------------------------- */
+h2.text-2xl.font-bold {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: #111 !important;
+  margin-bottom: 1.5rem !important;
+  text-align: center !important;
+  letter-spacing: 0.03em !important;
+}
+
+/* Responsive para el título principal */
+h2.text-2xl {
+    word-break: break-word !important;
+    white-space: normal !important;
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+}
+
+@media (max-width: 575.98px) {
+    h2.text-2xl {
+        font-size: 1.3rem !important;
+        padding-left: 0.2rem !important;
+        padding-right: 0.2rem !important;
+    }
+}
+
+/* ----------------------------- */
+/* FORMULARIO */
+/* ----------------------------- */
+form {
+  width: 100% !important;
+}
+
+label.block,
+label.font-medium,
+label.text-sm {
+  display: block !important;
+  margin-bottom: 0.3rem !important;
+  color: #333 !important;
+  font-weight: 600 !important;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+  width: 100% !important;
+  padding: 8px 12px !important;
+  font-size: 0.97rem !important;
+  border: 2px solid #ddd !important;
+  border-radius: 8px !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07) !important;
+  transition: border-color 0.3s, box-shadow 0.3s !important;
+  background: #fafbfc !important;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+select:focus,
+textarea:focus {
+  outline: none !important;
+  border-color: #2563eb !important;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.15) !important;
+  background-color: #f0f8ff !important;
+}
+
+/* Espaciado entre campos */
+.mb-4, .mb-6 {
+  margin-bottom: 1rem !important;
+}
+
+/* Grid de campos automáticos */
+.grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Mensajes de error */
+.bg-red-100 {
+  background-color: #ffe5e5 !important;
+  border-left: 5px solid #c62828 !important;
+  padding: 1rem !important;
+  border-radius: 6px !important;
+  margin-bottom: 1rem !important;
+}
+
+.text-red-800 {
+  color: #c62828 !important;
+}
+
+.list-disc {
+  padding-left: 1.25rem !important;
+  margin-top: 0.5rem !important;
+}
+
+/* Botón Crear Cita */
+button[type="submit"], .bg-blue-600 {
+  color: #2c3e50 !important;
+  background-color: #ecf0f1 !important;
+  border: 2px solid #bdc3c7 !important;
+  font-weight: 600 !important;
+  padding: 10px 24px !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s !important;
+  box-shadow: 0 2px 6px rgba(44, 62, 80, 0.08) !important;
+}
+
+button[type="submit"]:hover, .bg-blue-600:hover {
+  background-color: #34495e !important;
+  color: #fff !important;
+  border-color: #2c3e50 !important;
+}
+
+/* Botón Crear Cita - Estilos adicionales */
+button[type="submit"] {
+    background-color: #a50600 !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    padding: 10px 24px !important;
+    border: none !important;
+    transition: background-color 0.2s, color 0.2s !important;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.08) !important;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: #1d4ed8 !important;
+    color: #fff !important;
+}
+
+/* Centrar el botón */
+.flex.justify-end {
+  justify-content: center !important;
+}
+
+.flex.justify-end {
+  justify-content: flex-end !important;
+  gap: 1rem !important;
+}
+
+/* Botón Cancelar */
+a.btn-cancelar {
+    background: #fff !important;
+    color: #dc2626 !important;
+    border: 2px solid #dc2626 !important;
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    padding: 10px 24px !important;
+    font-size: 1rem !important;
+    text-decoration: none !important;
+    transition: background 0.2s, color 0.2s, border 0.2s !important;
+    display: inline-block !important;
+}
+
+a.btn-cancelar:hover,
+a.btn-cancelar:focus {
+    background: #dc2626 !important;
+    color: #fff !important;
+    border-color: #dc2626 !important;
+    text-decoration: none !important;
+}
+
+/* Botones separados a los extremos */
+.flex.justify-between {
+  justify-content: space-between !important;
+  gap: 1rem !important;
+}
+
+/* Responsive padding */
+@media (max-width: 640px) {
+  .max-w-3xl {
+    padding: 1rem 0.5rem !important;
+  }
+}
+
+/* Responsive para botones */
+@media (max-width: 575.98px) {
+    .row.g-2 .col-12 {
+        margin-bottom: 0.5rem !important;
+    }
+    a.btn-cancelar,
+    button[type="submit"] {
+        width: 100% !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+}
+
+/* Ajuste para campos y selects */
+.form-control, .form-select, textarea.form-control {
+    font-size: 1rem !important;
+    border-radius: 8px !important;
+    padding: 10px 14px !important;
+    border: 2px solid #ddd !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+    transition: border-color 0.3s, box-shadow 0.3s !important;
+}
+
+.form-control:focus, .form-select:focus, textarea.form-control:focus {
+    border-color: #2563eb !important;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.2) !important;
+    background-color: #f0f8ff !important;
+    outline: none !important;
+}
+
+/* Etiquetas */
+label.form-label {
+    color: #222 !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.3rem !important;
+}

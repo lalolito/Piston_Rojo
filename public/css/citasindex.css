@@ -1,0 +1,304 @@
+/* citasindex.css */
+
+/* --- Reset básico para la tabla de citas --- */
+table {
+    border-collapse: separate !important;
+    border-spacing: 0 0.75rem !important;
+    width: 100% !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: 0.95rem !important;
+    color: #222 !important;
+}
+
+/* Encabezado de tabla */
+thead tr {
+    background-color: #111 !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.12em !important;
+    font-weight: 700 !important;
+    border-radius: 6px !important;
+}
+
+thead th {
+    padding: 14px 12px !important;
+    border: none !important;
+    color: #fff !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+/* Cuerpo de la tabla */
+tbody tr {
+    background-color: #fff !important;
+    border-radius: 8px !important;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 0.05) !important;
+    transition: background-color 0.3s ease !important;
+    cursor: default !important;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9 !important;
+}
+
+tbody td {
+    padding: 14px 12px !important;
+    color: #111 !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+/* Estados de la cita */
+.estado-pendiente {
+    background-color: #fffbe6 !important;
+    color: #b59f00 !important;
+    padding: 6px 12px !important;
+    border-radius: 9999px !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    display: inline-block !important;
+}
+.estado-confirmada {
+    background-color: #e3f2fd !important;
+    color: #1565c0 !important;
+    padding: 6px 12px !important;
+    border-radius: 9999px !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    display: inline-block !important;
+}
+.estado-completada {
+    background-color: #e8f5e9 !important;
+    color: #2e7d32 !important;
+    padding: 6px 12px !important;
+    border-radius: 9999px !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    display: inline-block !important;
+}
+.estado-cancelada {
+    background-color: #ffebee !important;
+    color: #c62828 !important;
+    padding: 6px 12px !important;
+    border-radius: 9999px !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    display: inline-block !important;
+}
+.estado-no_asistio {
+    background-color: #f3f4f6 !important;
+    color: #374151 !important;
+    padding: 6px 12px !important;
+    border-radius: 9999px !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    display: inline-block !important;
+}
+
+/* Botones de acciones */
+.flex.gap-2 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 12px !important;
+}
+
+.flex.gap-2 > a,
+.flex.gap-2 > form > button {
+    font-weight: 600 !important;
+    padding: 8px 14px !important;
+    border-radius: 6px !important;
+    transition: all 0.3s ease !important;
+    border: 2px solid transparent !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    min-width: 90px !important;
+    text-align: center !important;
+}
+
+.flex.gap-2 > a.text-blue-600 {
+    color: #2c3e50 !important;
+    background-color: #ecf0f1 !important;
+    border: 2px solid #bdc3c7 !important;
+    text-decoration: none !important;
+}
+.flex.gap-2 > a.text-blue-600:hover {
+    background-color: #34495e !important;
+    color: #fff !important;
+    border-color: #2c3e50 !important;
+}
+
+.flex.gap-2 > form > button.text-red-600 {
+    color: #c62828 !important;
+    background-color: #ffebee !important;
+    border: 2px solid #c62828 !important;
+}
+.flex.gap-2 > form > button.text-red-600:hover {
+    background-color: #c62828 !important;
+    color: #fff !important;
+}
+
+/* Mensaje de éxito */
+.bg-green-100 {
+    background-color: #e6ffed !important;
+    border-left: 4px solid #22c55e !important;
+}
+.text-green-700 {
+    color: #15803d !important;
+}
+
+/* Botón Nueva Cita */
+a.bg-blue-600 {
+    background-color: #111 !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    padding: 10px 18px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    transition: background-color 0.3s ease !important;
+    text-decoration: none !important; /* Esta línea elimina la rallita del enlace */
+}
+a.bg-blue-600:hover {
+    background-color: #c62828 !important;
+    color: #fff !important;
+}
+
+/* Padding general para contenedores */
+.max-w-7xl {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+/* Scrollbar personalizado */
+.overflow-x-auto::-webkit-scrollbar {
+    height: 8px !important;
+}
+.overflow-x-auto::-webkit-scrollbar-track {
+    background: #f1f1f1 !important;
+}
+.overflow-x-auto::-webkit-scrollbar-thumb {
+    background-color: #c62828 !important;
+    border-radius: 20px !important;
+    border: 3px solid #f1f1f1 !important;
+}
+
+thead th {
+    color: white !important;
+}
+
+h1.text-2xl.font-bold {
+    font-family: 'Poppins', sans-serif !important;
+    color: #fff !important;
+    margin-bottom: 24px !important;
+    font-size: 2.25rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.05em !important;
+    text-transform: capitalize !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4) !important;
+}
+
+.btn-regresar {
+    
+    color: #961818 !important;
+    
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    padding: 10px 18px !important;
+    font-size: 1rem !important;
+    text-decoration: none !important;
+    transition: background 0.2s, color 0.2s, border 0.2s !important;
+    margin-right: 18px !important;
+    display: inline-block !important;
+}
+.btn-regresar:hover {
+    background: #961818 !important;
+    color: #fff !important;
+    border-color: #961818 !important;
+}
+
+@media (max-width: 767.98px) {
+    .admin-citas-responsive-table {
+        border: 0;
+    }
+    .admin-citas-responsive-table thead {
+        display: none !important;
+    }
+    .admin-citas-responsive-table tr {
+        display: block !important;
+        margin-bottom: 1.2rem;
+        border: 1px solid #e5e7eb;
+        border-radius: 0.7rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        background: #fff;
+        padding: 0.5rem 0;
+    }
+    .admin-citas-responsive-table td {
+        display: flex !important;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0.7rem 1rem !important;
+        border: none !important;
+        border-bottom: 1px solid #f3f4f6 !important;
+        font-size: 1rem !important;
+        text-align: left !important;
+        background: #fff;
+        min-height: 44px;
+        gap: 0.5rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .admin-citas-responsive-table td:last-child {
+        border-bottom: none !important;
+    }
+    .admin-citas-responsive-table td::before {
+        content: attr(data-label) ":";
+        font-weight: 700;
+        color: #961818;
+        text-transform: uppercase;
+        min-width: 110px;
+        margin-right: 1rem;
+        font-size: 0.98rem;
+        letter-spacing: 0.04em;
+        flex-shrink: 0;
+        display: inline-block;
+        text-align: left;
+        line-height: 1.3;
+        white-space: pre-line;
+    }
+    .admin-citas-responsive-table td > * {
+        flex: 1 1 0;
+        min-width: 0;
+        word-break: break-word;
+        line-height: 1.4;
+    }
+
+    /* Mejorar acciones en móvil */
+    .admin-citas-responsive-table td[data-label="Acciones"] > .flex.gap-2 {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 8px !important;
+        width: 100%;
+        padding: 0;
+    }
+    .admin-citas-responsive-table td[data-label="Acciones"] > .flex.gap-2 > a,
+    .admin-citas-responsive-table td[data-label="Acciones"] > .flex.gap-2 > form {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .admin-citas-responsive-table td[data-label="Acciones"] > .flex.gap-2 > a,
+    .admin-citas-responsive-table td[data-label="Acciones"] > .flex.gap-2 > form > button {
+        display: block !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+        padding: 10px 0 !important;
+        font-size: 1rem !important;
+    }
+}

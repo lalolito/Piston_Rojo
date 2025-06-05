@@ -1,0 +1,503 @@
+/* Proveedores.css */
+
+/* --- Reset básico para la tabla --- */
+table {
+    border-collapse: separate !important;
+    border-spacing: 0 0.75rem !important;
+    width: 100% !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: 0.95rem !important;
+    color: #222 !important;
+}
+
+/* Encabezado de tabla */
+thead tr {
+    background-color: #111 !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.12em !important;
+    font-weight: 700 !important;
+    border-radius: 6px !important;
+}
+
+thead th {
+    padding: 14px 12px !important;
+    border: none !important;
+    color: #fff !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+/* Encabezados de la tabla */
+table thead th {
+    background: #111 !important;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+/* Celdas cuerpo */
+tbody tr {
+    background-color: #fff !important;
+    border-radius: 8px !important;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 0.05) !important;
+    transition: background-color 0.3s ease !important;
+    cursor: default !important;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9 !important;
+}
+
+tbody td {
+    padding: 14px 12px !important;
+    color: #111 !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+tbody td.font-mono {
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+/* Estados */
+.estado-activo {
+    background-color: #e8f5e9 !important;
+    color: #2e7d32 !important;
+    padding: 6px 12px !important;
+    border-radius: 9999px !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    display: inline-block !important;
+}
+
+.estado-inactivo {
+    background-color: #ffebee !important;
+    color: #c62828 !important;
+    padding: 6px 12px !important;
+    border-radius: 9999px !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    display: inline-block !important;
+}
+
+/* Botones en acciones */
+.flex.space-x-4 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 12px !important;
+}
+
+.flex.space-x-4 > a,
+.flex.space-x-4 > form > button {
+    font-weight: 600 !important;
+    padding: 8px 14px !important;
+    border-radius: 6px !important;
+    transition: all 0.3s ease !important;
+    border: 2px solid transparent !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    min-width: 90px !important;
+    text-align: center !important;
+}
+
+.flex.space-x-4 > a.text-indigo-600 {
+    color: #2c3e50 !important;
+    background-color: #ecf0f1 !important;
+    border-color: #bdc3c7 !important;
+}
+
+.flex.space-x-4 > a.text-indigo-600:hover {
+    background-color: #34495e !important;
+    color: #fff !important;
+    border-color: #2c3e50 !important;
+}
+
+/* --- Botón Editar --- */
+a.text-indigo-600 {
+    background: #ecf0f1 !important;
+    color: #2c3e50 !important;
+    border: 2px solid #bdc3c7 !important;
+    font-weight: 700 !important;
+    border-radius: 6px !important;
+    padding: 9px 27px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    min-width: 90px !important;
+    text-align: center !important;
+    transition: background 0.2s, color 0.2s, border 0.2s !important;
+    text-decoration: none !important;
+}
+a.text-indigo-600:hover {
+    background: #34495e !important;
+    color: #fff !important;
+    border-color: #2c3e50 !important;
+}
+
+/* Activar */
+.flex.space-x-4 > form > button.text-green-600 {
+    color: #2e7d32 !important;
+    background-color: #e8f5e9 !important;
+    border: 2px solid #2e7d32 !important;
+}
+
+.flex.space-x-4 > form > button.text-green-600:hover {
+    background-color: #2e7d32 !important;
+    color: #fff !important;
+}
+
+/* --- Botón Activar --- */
+button.text-green-600 {
+    background: #e8f5e9 !important;
+    color: #2e7d32 !important;
+    border: 2px solid #2e7d32 !important;
+    font-weight: 700 !important;
+    border-radius: 6px !important;
+    padding: 8px 18px !important;
+    min-width: 90px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    transition: background 0.2s, color 0.2s, border 0.2s !important;
+}
+button.text-green-600:hover {
+    background: #2e7d32 !important;
+    color: #fff !important;
+    border-color: #2e7d32 !important;
+}
+
+/* Inactivar */
+.flex.space-x-4 > form > button.text-red-600 {
+    color: #c62828 !important;
+    background-color: #ffebee !important;
+    border: 2px solid #c62828 !important;
+}
+
+.flex.space-x-4 > form > button.text-red-600:hover {
+    background-color: #c62828 !important;
+    color: #fff !important;
+}
+
+/* --- Botón Inactivar --- */
+button.text-red-600 {
+    background: #ffebee !important;
+    color: #c62828 !important;
+    border: 2px solid #c62828 !important;
+    font-weight: 700 !important;
+    border-radius: 6px !important;
+    padding: 8px 18px !important;
+    min-width: 90px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    transition: background 0.2s, color 0.2s, border 0.2s !important;
+}
+button.text-red-600:hover {
+    background: #c62828 !important;
+    color: #fff !important;
+    border-color: #c62828 !important;
+}
+
+
+
+/* --- Íconos dentro de los botones --- */
+a.text-indigo-600 svg,
+button.text-green-600 svg,
+button.text-red-600 svg {
+    margin-right: 6px !important;
+    width: 20px !important;
+    height: 20px !important;
+    vertical-align: middle !important;
+}
+
+/* SVG iconos pequeños */
+svg.h-5.w-5 {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+/* Título principal */
+h1.text-3xl.font-bold {
+    font-family: 'Poppins', sans-serif !important;
+    color: #fff !important;
+    margin-bottom: 24px !important;
+    font-size: 2.25rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.05em !important;
+    text-transform: capitalize !important;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4) !important;
+}
+
+/* Responsive para el título principal */
+h1.text-3xl {
+    word-break: break-word !important;
+    white-space: normal !important;
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+}
+
+@media (max-width: 575.98px) {
+    h1.text-3xl {
+        font-size: 1.3rem !important;
+        padding-left: 0.2rem !important;
+        padding-right: 0.2rem !important;
+    }
+}
+
+/* Mensaje de éxito */
+.bg-green-50 {
+    background-color: #e6ffed !important;
+    border-left-color: #22c55e !important;
+}
+
+.text-green-700 {
+    color: #15803d !important;
+}
+
+/* Botón Nuevo Proveedor */
+a.bg-blue-600 {
+    background-color: #000000 !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    padding: 10px 24px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    transition: background-color 0.2s, color 0.2s !important;
+    text-decoration: none !important;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.08) !important;
+    border: none !important;
+}
+
+a.bg-blue-600:hover,
+a.bg-blue-600:focus {
+    background-color: #a00000 !important;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+
+
+.btn-regresar:hover,
+.btn-regresar:focus {
+    background: #2563eb !important;
+    color: #fff !important;
+    border-color: #2563eb !important;
+    text-decoration: none !important;
+}
+
+/* Responsive para botones principales */
+@media (max-width: 575.98px) {
+    a.bg-blue-600,
+    .btn-regresar {
+        width: 100% !important;
+        margin-right: 0 !important;
+        margin-bottom: 0.5rem !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+}
+
+/* Padding general */
+.max-w-7xl {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+/* Paginación */
+div.bg-white.px-4.py-3.border-t.border-gray-200.sm\:px-6 {
+    display: flex !important;
+    justify-content: center !important;
+    padding-top: 1rem !important;
+}
+
+div.bg-white.px-4.py-3.border-t.border-gray-200.sm\:px-6 nav > div > span,
+div.bg-white.px-4.py-3.border-t.border-gray-200.sm\:px-6 nav > div > a {
+    border-radius: 6px !important;
+    border: 1px solid #ddd !important;
+    margin: 0 3px !important;
+    padding: 6px 12px !important;
+    color: #111 !important;
+    font-weight: 600 !important;
+    transition: background-color 0.25s ease !important;
+}
+
+div.bg-white.px-4.py-3.border-t.border-gray-200.sm\:px-6 nav > div > a:hover {
+    background-color: #c62828 !important;
+    color: #fff !important;
+}
+
+div.bg-white.px-4.py-3.border-t.border-gray-200.sm\:px-6 nav > div > span {
+    background-color: #111 !important;
+    color: #fff !important;
+    border-color: #111 !important;
+}
+
+/* Scrollbar personalizado */
+.overflow-x-auto::-webkit-scrollbar {
+    height: 8px !important;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+    background: #f1f1f1 !important;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+    background-color: #c62828 !important;
+    border-radius: 20px !important;
+    border: 3px solid #f1f1f1 !important;
+}
+
+thead th {
+    color: white !important;
+}
+
+/* Botón regresar */
+.btn-regresar {
+    
+    color: #961818 !important;
+    
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    padding: 10px 18px !important;
+    font-size: 1rem !important;
+    text-decoration: none !important;
+    transition: background 0.2s, color 0.2s, border 0.2s !important;
+    margin-right: 18px !important;
+    display: inline-block !important;
+}
+
+.btn-regresar:hover {
+    background: #961818 !important;
+    color: #fff !important;
+    border-color: #961818 !important;
+}
+
+@media (max-width: 767.98px) {
+    .proveedores-responsive-table thead {
+        display: none !important;
+    }
+    .proveedores-responsive-table tr {
+        display: block !important;
+        margin-bottom: 1.2rem;
+        border: 1px solid #f3f4f6;
+        border-radius: 0.7rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        background: #fff;
+    }
+    .proveedores-responsive-table td {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 0.85rem 1rem !important;
+        border: none !important;
+        border-bottom: 1px solid #f3f4f6 !important;
+        font-size: 1rem !important;
+        text-align: left !important;
+        background: #fff;
+        min-height: 44px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    /* Ajuste especial para Razón Social: mismo tamaño y alineación */
+    .proveedores-responsive-table td[data-label="Razón Social"]::before {
+        min-width: 110px;   /* Igual que los otros labels */
+        max-width: 110px;
+        margin-right: 0.5rem;
+    }
+    .proveedores-responsive-table td[data-label="Razón Social"] > * {
+        flex: 1 1 0;
+        min-width: 0;
+        word-break: break-word;
+        text-align: left !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .proveedores-responsive-table td::before {
+        content: attr(data-label) ":";
+        font-weight: 700;
+        color: #961818;
+        text-transform: uppercase;
+        min-width: 110px;
+        margin-right: 0.5rem;
+        font-size: 0.98rem;
+        letter-spacing: 0.04em;
+        flex-shrink: 0;
+        display: inline-block;
+        text-align: left;
+    }
+    .proveedores-responsive-table td > * {
+        flex: 1 1 0;
+        min-width: 0;
+        word-break: break-word;
+    }
+    .proveedores-responsive-table tr:last-child td {
+        border-bottom: none !important;
+    }
+    /* Acciones apiladas y alineadas */
+    .proveedores-responsive-table td[data-label="Acciones"] > .d-flex {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 10px !important;
+        width: 100%;
+        padding: 0;
+    }
+    .proveedores-responsive-table td[data-label="Acciones"] > .d-flex > a,
+    .proveedores-responsive-table td[data-label="Acciones"] > .d-flex > form {
+        width: 100% !important;
+        margin: 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .proveedores-responsive-table td[data-label="Acciones"] > .d-flex > a,
+    .proveedores-responsive-table td[data-label="Acciones"] > .d-flex > form > button {
+        width: 100% !important;
+        min-width: 0 !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+        padding: 10px 0 !important;
+        font-size: 1rem !important;
+        margin: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 8px !important;
+    }
+    .proveedores-responsive-table td[data-label="Acciones"] svg {
+        margin-right: 6px !important;
+        vertical-align: middle !important;
+        min-width: 20px !important;
+    }
+}
+
+/* Centrar los botones de acciones en escritorio (PC) */
+.proveedores-responsive-table td[data-label="Acciones"] .d-flex {
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 12px !important;
+}
+.proveedores-responsive-table td[data-label="Acciones"] .d-flex > a,
+.proveedores-responsive-table td[data-label="Acciones"] .d-flex > form {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+}
+.proveedores-responsive-table td[data-label="Acciones"] .d-flex > a,
+.proveedores-responsive-table td[data-label="Acciones"] .d-flex > form > button {
+    min-width: 90px !important;
+    text-align: center !important;
+}

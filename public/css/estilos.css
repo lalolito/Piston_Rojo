@@ -1,0 +1,725 @@
+/* Configuración global y reinicio */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.body {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+
+}
+
+.navbar-toggler {
+    background-color: #000;
+    /* Color negro para el botón completo */
+    border-color: #000;
+    /* Color negro para el borde del botón */
+}
+
+.navbar-toggler-icon {
+    color: #000;
+    /* Color negro para el texto del botón */
+}
+
+.navbar-toggler:hover {
+    background-color: #333;
+    /* Color gris oscuro para el botón al pasar el mouse */
+    border-color: #333;
+    /* Color gris oscuro para el borde del botón al pasar el mouse */
+}
+
+.navbar-toggler {
+    background-color: #000 !important;
+    /* Color negro para el botón completo */
+    border-color: #000 !important;
+    /* Color negro para el borde del botón */
+}
+
+/*Estilo Barra de Menu*/
+.nav-links {
+
+    font-weight: bold;
+
+    color: #000;
+    /* Color del texto */
+    text-decoration: none;
+    /* Quita la línea característica de un enlace */
+    display: inline-block;
+    /* Display inline-block para que tenga un espacio entre enlaces */
+    padding: 10px;
+    /* Agrega un padding para separar los enlaces */
+    margin: 10px;
+    /* Agrega un margen para separar los enlaces */
+    transition: color 0.2s ease;
+    /* Agrega un efecto de transición para el color */
+}
+
+.nav-links:hover {
+    color: #ff0000;
+    /* Cambia el color del texto al pasar el mouse */
+    text-decoration: none;
+    /* Mantener la línea característica de un enlace oculta */
+}
+
+/*Estilo fin Barra de Menu*/
+
+/*Footer Inicio Funcional*/
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fefefe;
+    color: rgb(0, 0, 0);
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts p {
+    margin: 5px 0;
+}
+
+.footer-links {
+    display: fixed;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media a {
+    margin: 0 50px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+/*Footer Fin Funcional*/
+
+/* Carrusel */
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.carousel-images img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.register-link {
+    color: #d92c1e;
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel {
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-item img {
+
+    max-height: 70vh;
+    /* Ajusta este valor según la altura que quieras. vh es la altura relativa al viewport */
+    object-fit: cover;
+    /* Mantiene el aspecto de la imagen mientras ocupa todo el espacio */
+    object-position: center;
+    /* Centra la imagen dentro del contenedor */
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item img {
+    border-radius: 0;
+    /* Elimina el border-radius */
+}
+
+/* Fin Carrusel */
+
+/*Servicios Piston Rojo*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/* Animación */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.card {
+    background-color: #333;
+    border: none;
+    margin-bottom: 20px;
+
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    color: #fff;
+}
+
+/* Estilo para el botón "Ver más" */
+.card-body .btn-primary {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+    color: #fff !important;
+}
+
+/* Estilo para el botón "Ver más" en hover */
+.card-body .btn-primary:hover {
+    background-color: #c82333 !important;
+    /* Color de fondo rojo más oscuro en hover */
+    border-color: #bd2130 !important;
+    /* Color del borde rojo más oscuro en hover */
+}
+
+/*Servicios Fin Piston Rojo*/
+
+/* No Tocar */
+
+#Servicios.content {
+    background-color: black;
+}
+
+#Conócenos.content {
+    background-color: black;
+}
+
+#sobre-nosotros.content {
+    background-color: black;
+}
+
+/* No Tocar */
+
+/* Gestion Usuario */
+
+.card {
+    background-color: #222;
+    /* Fondo oscuro para la tarjeta */
+    border: none;
+}
+
+.card-body {
+    color: #ffffff;
+    /* Texto gris claro para la tarjeta */
+}
+
+
+/* Estilos para los botones */
+
+.text-center.mb-4 {
+    color: #ffffff;
+    /* Cambia el color de la letra a verde */
+}
+
+
+.custom-edit-button {
+    background-color: #9f2727;
+    /* Rojo para el botón Editar Datos */
+    border-color: #9f2727;
+    /* Borde rojo */
+    color: #fff;
+    /* Texto blanco */
+}
+
+.custom-edit-button:hover {
+    background-color: #9f2727;
+    /* Rojo oscuro en hover */
+    border-color: #9f2727;
+    /* Borde rojo oscuro en hover */
+}
+
+.custom-edit-button:hover {
+    background-color: #a79f9f;
+    /* Rojo oscuro en hover */
+    border-color: #818181;
+    /* Borde rojo oscuro en hover */
+}
+
+.custom-save-button {
+    background-color: #28a745;
+    /* Verde para el botón Guardar Cambios */
+    border-color: #28a745;
+    /* Borde verde */
+    color: #fff;
+    /* Texto blanco */
+}
+
+.custom-save-button:hover {
+    background-color: #218838;
+    /* Verde oscuro en hover */
+    border-color: #218838;
+    /* Borde verde oscuro en hover */
+}
+
+.custom-change-password-button {
+    background-color: #9f2727;
+    /* Azul para el botón Cambiar Contraseña */
+    border-color: #9f2727;
+    /* Borde azul */
+    color: #fff;
+    /* Texto blanco */
+}
+
+.custom-change-password-button:hover {
+    background-color: #a6a6a6;
+    /* Azul oscuro en hover */
+    border-color: #7e7d7d;
+    /* Borde azul oscuro en hover */
+}
+
+.custom-logout-button {
+    background-color: #ff0019;
+    /* Rojo para el botón Cerrar Sesión */
+    border-color: #ff0019;
+    /* Borde rojo */
+    color: #ffffff;
+    /* Texto blanco */
+}
+
+.custom-logout-button:hover {
+    background-color: #cb1a2cd2;
+    /* Rojo oscuro en hover */
+    border-color: #cb1a2cd2;
+    /* Borde rojo oscuro en hover */
+    color: white;
+}
+
+/* Estilos para el perfil */
+.profile-pic img {
+    cursor: pointer;
+    border: 2px solid #dee2e6;
+    padding: 5px;
+}
+
+.profile-pic img:hover {
+    border-color: #ff0000;
+}
+
+/* Fin Gestion Usuario */
+
+/*aca se inicia todo de la pagina de inicio de sesion*/
+
+/* Ini sesion  Comienzo*/
+.nope {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(img/2.jpg);
+    background-size: cover;
+}
+
+.container-form {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+    height: 500px;
+    max-width: 900px;
+    transition: all 1s ease;
+    margin: 10px;
+}
+
+.information {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #b6afaf;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.info-childs {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.info-childs h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.info-childs p {
+    margin: 15px 0;
+    color: #555;
+}
+
+.info-childs input {
+    background-color: transparent;
+    outline: none;
+    border: solid 2px #ff0000;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #090000;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.info-childs input:hover {
+    background-color: #ff2600;
+    border: none;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    background-color: #000000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 4px solid #ffffff;
+    box-shadow: 0 0 10px #fffefe;
+}
+
+.form-information-childs {
+    padding: 0 30px;
+}
+
+.form-information-childs h2 {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.form-information-childs p {
+    color: #ffffff;
+}
+
+.icons {
+    margin: 15px 0;
+}
+
+.icons i {
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    margin: 0 10px;
+    color: #ff0000;
+    border: solid thin #ff0000;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.icons i:hover {
+    background-color: #ff0404;
+    color: #ffffff;
+}
+
+.form {
+    margin: 30px 0 0 0;
+}
+
+.form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(30, 27, 238, 0.1);
+}
+
+.form label input {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #333;
+}
+
+.form label i {
+    color: #ff0000;
+}
+
+.form input[type="submit"] {
+    background-color: #d90000;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+.form input[type="submit"]:hover {
+    background-color: #8c8c8c;
+}
+
+.hide {
+    position: absolute;
+    transform: translateY(-300%);
+}
+
+.form div .alerta {
+    width: 290px;
+    text-align: left;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    font-size: .8rem;
+}
+
+.form>.alerta-error,
+.form>.alerta-exito {
+    display: none;
+}
+
+.form .alertaError {
+    display: block;
+    background-color: #F66060;
+    padding: .5rem 1rem;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: .8rem;
+}
+
+.form .alertaExito {
+    display: block;
+    background-color: #0ca828;
+    padding: .5rem 1rem;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: .8rem;
+}
+
+.form .error {
+    outline: solid 2px #9d2222;
+}
+
+.info-childs {
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-bottom: 20px;
+    /* Espacio entre el logo y el texto */
+}
+
+.info-childs h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.info-childs p {
+    margin: 15px 0;
+    color: #555;
+}
+
+.info-childs input {
+    background-color: transparent;
+    outline: none;
+    border: solid 2px #ff0000;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #090000;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.info-childs input:hover {
+    background-color: #ff2600;
+    border: none;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
+
+@media screen and (max-width:580px) {
+    .container-form {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .information {
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0;
+    }
+
+    .form-information {
+        width: 100%;
+        padding: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+    }
+}
+
+/* Ini sesion  Fin */
+
+
+/* Titulo Piston Rojo */
+
+.contain {
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.tit {
+    text-align: center;
+    /* Centra el texto horizontalmente */
+    margin: 0 auto;
+    /* Centra el div si tiene un ancho fijo */
+    padding: 20px;
+    /* Opcional: agrega espacio interno */
+    background-color: #000;
+}
+
+.tit h1 {
+    color: #e53935;
+    /* Rojo intenso */
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos básicos para el título */
+#titulo-principal {
+    font-size: 4rem;
+    text-align: center;
+    color: #ff0000;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    display: inline-block;
+    animation: fadeInOut 5s ease-in-out infinite, colorChange 3s linear infinite;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    /* Efecto de brillo por defecto */
+}
+
+/*fin titulo*/
+
+/*ini Animacion Conosenos Y Servicios*/
+
+.text-center h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Aplicando la animación a las tarjetas */
+.card {
+    animation: fadeIn 1.5s ease-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+/* Para que las tarjetas tengan un ligero retraso en la animación */
+.col-md-4:nth-child(1) .card {
+    animation-delay: 0.5s;
+}
+
+.col-md-4:nth-child(2) .card {
+    animation-delay: 1s;
+}
+
+.col-md-4:nth-child(3) .card {
+    animation-delay: 1.5s;
+}
+
+/*Fin Animacion Conosenos Y Servicios*/

@@ -1,0 +1,273 @@
+/* =========================
+   Layout General
+   ========================= */
+body, html {
+  min-height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  background-color: #f9fafb !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+x-app-layout {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-height: 100vh !important;
+}
+
+x-app-layout > div {
+  min-height: 100vh !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 3rem 1.5rem !important;
+}
+
+/* =========================
+   Contenedor Principal
+   ========================= */
+.form-container {
+  max-width: 700px !important;
+  width: 100% !important;
+  background: #f7f7f7 !important;
+  padding: 2.5rem 3rem 3.5rem 3rem !important;
+  border-radius: 8px !important;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1) !important;
+  box-sizing: border-box !important;
+}
+
+/* =========================
+   Header del Formulario
+   ========================= */
+.form-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  border-bottom: 3px solid #ef4444 !important;
+  padding-bottom: 1rem !important;
+  margin-bottom: 2.5rem !important;
+}
+
+.form-header h1 {
+  font-size: 2.25rem !important;
+  font-weight: 800 !important;
+  color: #111 !important;
+  letter-spacing: 0.02em !important;
+  margin: 0 !important;
+}
+
+.form-header a {
+  color: #ef4444 !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  font-size: 1rem !important;
+  transition: color 0.3s ease-in-out !important;
+}
+
+.form-header a:hover {
+  color: #b91c1c !important;
+}
+
+/* =========================
+   Errores del Formulario
+   ========================= */
+.form-error {
+  background: #fef2f2 !important;
+  border-left: 5px solid #b91c1c !important;
+  padding: 1rem 1.5rem !important;
+  margin-bottom: 2rem !important;
+  border-radius: 0.75rem !important;
+  color: #7f1d1d !important;
+  font-weight: 600 !important;
+}
+
+.form-error h3 {
+  margin-bottom: 0.5rem !important;
+  font-weight: 700 !important;
+}
+
+.form-error ul {
+  margin-top: 0.5rem !important;
+  padding-left: 1.5rem !important;
+  list-style-type: disc !important;
+  margin-bottom: 0 !important;
+}
+
+/* =========================
+   Grid Responsivo para Inputs
+   ========================= */
+.form-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+  gap: 1.75rem 2.5rem !important;
+}
+
+/* =========================
+   Etiquetas de los Inputs
+   ========================= */
+label {
+  display: block !important;
+  font-weight: 700 !important;
+  margin-bottom: 0.5rem !important;
+  color: #222 !important;
+  font-size: 1rem !important;
+}
+
+/* =========================
+   Inputs y Selects
+   ========================= */
+input[type="text"],
+input[type="number"],
+select {
+  width: 100% !important;
+  padding: 0.75rem 1.25rem !important;
+  border: 2px solid #ddd !important;
+  border-radius: 0.75rem !important;
+  font-size: 1.1rem !important;
+  font-weight: 500 !important;
+  color: #222 !important;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease !important;
+  box-sizing: border-box !important;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #ef4444 !important;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.5) !important;
+  outline: none !important;
+  background-color: #fff !important;
+}
+
+/* =========================
+   Input con Prefijo/Sufijo
+   ========================= */
+.input-group {
+  position: relative !important;
+  width: 100% !important;
+}
+
+.input-group .prefix,
+.input-group .suffix {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  color: #ef4444 !important;
+  font-weight: 700 !important;
+  font-size: 1.1rem !important;
+  user-select: none !important;
+  pointer-events: none !important;
+  z-index: 2 !important;
+}
+
+.input-group .prefix {
+  left: 1rem !important;
+}
+
+.input-group .suffix {
+  right: 1rem !important;
+}
+
+.input-group input {
+  padding-left: 3.5rem !important;
+  padding-right: 3.5rem !important;
+}
+
+.input-group input:focus {
+  border-color: #ef4444 !important;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.6) !important;
+}
+
+/* =========================
+   Inputs Deshabilitados
+   ========================= */
+.disabled-input {
+  background-color: #f3f4f6 !important;
+  cursor: not-allowed !important;
+  color: #6b7280 !important;
+}
+
+/* =========================
+   Footer del Formulario
+   ========================= */
+.form-footer {
+  margin-top: 4rem !important;
+  border-top: 3px solid #ef4444 !important;
+  padding-top: 1.75rem !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+
+/* =========================
+   Botón Principal de Enviar
+   ========================= */
+button[type="submit"] {
+  background-color: #ef4444 !important;
+  color: white !important;
+  padding: 0.85rem 2.5rem !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  border: none !important;
+  border-radius: 0.75rem !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.7rem !important;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease !important;
+  box-shadow: 0 6px 18px rgba(239, 68, 68, 0.5) !important;
+}
+
+button[type="submit"]:hover {
+  background-color: #b91c1c !important;
+  box-shadow: 0 8px 24px rgba(185, 28, 28, 0.7) !important;
+}
+
+button svg {
+  height: 1.3rem !important;
+  width: 1.3rem !important;
+  fill: currentColor !important;
+}
+
+/* =========================
+   Contenedor Externo para Centrar
+   ========================= */
+.page-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 1.5rem 1.5rem !important;
+  min-height: 90vh !important;
+}
+
+/* =========================
+   Botón Volver al Inventario
+   ========================= */
+.btn-back-inventario {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  background: #fff !important;
+  color: #ef4444 !important;
+  border: 2px solid #ef4444 !important;
+  border-radius: 0.7rem !important;
+  padding: 0.6rem 1.5rem !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  text-decoration: none !important;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.08) !important;
+  transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s !important;
+}
+
+
+
+
+.btn-back-inventario:hover svg,
+.btn-back-inventario:focus svg {
+  stroke: #fff !important;
+}

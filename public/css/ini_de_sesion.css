@@ -1,0 +1,280 @@
+body {
+    font-family: 'Nunito', Arial, sans-serif;
+    background-color: #222;
+    background-image: url("../imagenes/mooooo.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+.form-container {
+    background: #181818;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.30);
+    padding: 2.5rem 2rem;
+    width: 100%;
+    max-width: 400px;
+    z-index: 1;
+    margin: 2rem 0;
+    color: #f3f3f3;
+    position: relative;
+}
+
+.form-header {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.logo-img {
+    width: 60px;
+    margin-bottom: 1rem;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/* Botón de Iniciar Sesión (header) */
+.btn-login-header {
+    background: #dc2626;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+.btn-login-header:hover {
+    background: #b91c1c;
+}
+
+/* Botón de Registrarse (header) */
+.btn-register-header {
+    background: #dc2626;
+    color: #fff !important;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    transition: background 0.2s;
+    display: inline-block;
+}
+
+.btn-register-header:hover {
+    background: #b91c1c;
+    color: #fff !important;
+}
+
+/* Título del formulario */
+.login-title {
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* Formulario */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.login-label {
+    color: #f3f3f3;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    display: block;
+}
+
+.login-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background: #232323;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.login-input:focus {
+    border-color: #dc2626;
+    outline: none;
+    background: #181818;
+}
+
+.remember-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.remember-label {
+    font-size: 1rem;
+    color: #f3f3f3;
+    display: flex;
+    align-items: center;
+}
+
+.remember-checkbox {
+    accent-color: #dc2626;
+    margin-right: 0.5rem;
+}
+
+/* Botón principal de Iniciar Sesión (formulario) */
+.btn-login-main {
+    background: #dc2626;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    transition: background 0.2s;
+}
+
+.btn-login-main:hover {
+    background: #b91c1c;
+}
+
+/* Botón de Google */
+.btn-google-login {
+    background: #dc2626;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-google-login:hover {
+    background: #b91c1c;
+    color: #fff;
+}
+
+/* Enlace de Olvidaste tu contraseña */
+.forgot-password-link {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.forgot-password-link a {
+    color: #dc2626;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.forgot-password-link a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Utilidades */
+.text-sm {
+    font-size: 0.95rem;
+}
+
+.text-gray-600 {
+    color: #f3f3f3;
+}
+
+.text-gray-400 {
+    color: #9ca3af;
+}
+
+.rounded {
+    border-radius: 6px;
+}
+
+.mt-1 {
+    margin-top: 0.25rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.ms-2 {
+    margin-left: 0.5rem;
+}
+
+.ms-3 {
+    margin-left: 0.75rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+@media (max-width: 500px) {
+    .form-container {
+        padding: 1.5rem 0.5rem;
+        max-width: 95vw;
+    }
+}
+
+.form-container,
+.login-form,
+.login-input {
+    box-sizing: border-box;
+}
